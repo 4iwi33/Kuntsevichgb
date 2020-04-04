@@ -12,7 +12,7 @@
     include 'connect.php';
     include 'function.php';
 
-    $result = $mysqli->query('SELECT * FROM tablegb');
+    $result = $mysqli->query('SELECT * FROM table5');
 
     while ($row = $result->fetch_object()) {
         echo "<b>" . smile($row->text) . "</b> <i>$row->name</i><br>\n";
