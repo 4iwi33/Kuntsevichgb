@@ -1,6 +1,6 @@
 <?php
  $mysqli =  new mysqli(
-    'localhost',
+    'remotemysql.com',
     '7OZJvLePUB',
     'mAZVYJ22FY',
     'mAZVYJ22FY'
