@@ -1,0 +1,10 @@
+Username: 7OZJvLePUB
+
+Database name: 7OZJvLePUB
+
+Password: mAZVYJ22FY
+
+Server: remotemysql.com
+
+Port: 330
+------------------------------------------------------

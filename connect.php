@@ -1,7 +1,7 @@
 <?php
  $mysqli =  new mysqli(
     'localhost',
-    'root',
-    '',
-    'gb'
+    '7OZJvLePUB',
+    'mAZVYJ22FY',
+    'mAZVYJ22FY'
 );
