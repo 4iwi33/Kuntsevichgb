@@ -9,29 +9,30 @@
 
 <body>
     <?php
-    include 'config.php';
+    // include 'config.php';
     include 'connect.php';
     include 'function.php';
-    $pagecount = ceil($count / $pagesize);
+    // $pagecount = ceil($count / $pagesize);
 
-    $currinentpage = $_GET['page'] ?? 1;
+    // $currinentpage = $_GET['page'] ?? 1;
 
-    $startrow = ($currinentpage - 1) = $pagesize;
+    // $startrow = ($currinentpage - 1) = $pagesize;
 
-    $pageination = "<div class='pageination'>";
+    // $pageination = "<div class='pageination'>";
 
-    for ($i = 1; $i <= $pagecount; $i++) {
-        $pageination .= "</div>";
-    }
+    // for ($i = 1; $i <= $pagecount; $i++) {
+    //     $pageination .= "</div>";
+    // }
+    // $pageination .= "<a href=?page=$i'>$i</a>";
 
     $result = $mysqli->query('SELECT * FROM tablegb');
 
-    echo $pageination;
+    // echo $pageination;
 
     while ($row = $result->fetch_object()) {
         echo "<b>" . smile($row->text) . "</b> <i>$row->name</i><br>\n";
     }
-    echo $pageination;
+    // echo $pageination;
 
 
     $mysqli->close();
