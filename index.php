@@ -9,14 +9,30 @@
 
 <body>
     <?php
+    include 'config.php';
     include 'connect.php';
     include 'function.php';
+    $pagecount = ceil($count / $pagesize);
+
+    $currinentpage = $_GET['page'] ?? 1;
+
+    $startrow = ($currinentpage - 1) = $pagesize;
+
+    $pageination = "<div class='pageination'>";
+
+    for ($i = 1; $i <= $pagecount; $i++) {
+        $pageination .= "</div>";
+    }
 
     $result = $mysqli->query('SELECT * FROM tablegb');
+
+    echo $pageination;
 
     while ($row = $result->fetch_object()) {
         echo "<b>" . smile($row->text) . "</b> <i>$row->name</i><br>\n";
     }
+    echo $pageination;
+
 
     $mysqli->close();
     ?>
